@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=mu-Firewall Status
+Comment=mu-firewall status
+TryExec=/etc/init.d/firewall
+#Exec=bash -e "while true; do sudo /etc/init.d/firewall status; read; clean; reset; done"
+Exec=xterm -T "Firewall Status (press Enter to refresh)" -geometry "130x22+0+0" -hold -e "while true; do sudo /etc/init.d/firewall status; read; clean; reset; done"
+Icon=/etc/firewall/icons/status.png
+Terminal=true
+Type=Application
+Categories=Firewall;Internet;
+StartupNotify=true
+OnlyShowIn=GNOME;Unity;
+Keywords=Run;

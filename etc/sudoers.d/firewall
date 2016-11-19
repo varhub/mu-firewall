@@ -1,0 +1,3 @@
+# Entry for freely firewall manage.
+
+%users ALL=(ALL) NOPASSWD:/etc/init.d/firewall

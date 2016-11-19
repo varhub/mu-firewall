@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=mu-Firewall OFF
+Comment=stop mu-firewall
+TryExec=/etc/init.d/firewall
+Exec=sudo /etc/init.d/firewall change-mode off
+Icon=/etc/firewall/icons/off.png
+Terminal=false
+Type=Application
+Categories=Firewall;Internet;
+StartupNotify=true
+OnlyShowIn=GNOME;Unity;
+Keywords=Run;

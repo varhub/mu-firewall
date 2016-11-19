@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=mu-Firewall ON
+Comment=start mu-firewall
+TryExec=/etc/init.d/firewall
+Exec=sudo /etc/init.d/firewall change-mode default
+Icon=/etc/firewall/icons/on.png
+Terminal=false
+Type=Application
+Categories=Firewall;Internet;
+StartupNotify=true
+OnlyShowIn=GNOME;Unity;
+Keywords=Run;

@@ -1,0 +1,21 @@
+==== Firewall Menu ====
+
+# Firewall
+- /etc/firewall/icons/firewall.png
+
+* On
++ sudo /etc/init.d/firewall change-mode default
+- /etc/firewall/icons/on.png
+
+* Off
++ sudo /etc/init.d/firewall change-mode off
+- /etc/firewall/icons/off.png
+
+* Lock
++ /etc/init.d/firewall change-mode lock
+- /etc/firewall/icons/lock.png
+
+* Status
++ xterm -T "Firewall Status (press Enter to refresh)" -geometry "130x22+0+0" -hold -e "while true; do sudo /etc/init.d/firewall status; read; clean; reset; done"
+- /etc/firewall/icons/status.png
+

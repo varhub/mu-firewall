@@ -1,0 +1,10 @@
+# Firewall configuration file
+
+# Path where alocate firewall files
+IPFW_DIR=/etc/firewall
+IPFW_EXTENSIONS_DIR=${IPFW_DIR}/extension.d
+
+FILE_ERR=/tmp/iptables.err
+
+# Location of iptables binary executable
+IPTABLES="/sbin/iptables"

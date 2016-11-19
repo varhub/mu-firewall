@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=mu-Firewall Lock
+Comment=lock intenrnet access
+TryExec=/etc/init.d/firewall
+Exec=sudo /etc/init.d/firewall change-mode lock
+Icon=/etc/firewall/icons/lock.png
+Terminal=false
+Type=Application
+Categories=Firewall;Internet;
+StartupNotify=true
+OnlyShowIn=GNOME;Unity;
+Keywords=Run;
